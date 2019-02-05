@@ -1,0 +1,9 @@
+﻿  Animal.cpp
+  Duck.cpp
+  FlyingAnimal.cpp
+  Lake.cpp
+  main.cpp
+  SwimmingAnimal.cpp
+  WalkingAnimal.cpp
+  Generating Code...
+  dag2LakeGame.vcxproj -> C:\Users\Andr4\source\repos\dag2LakeGame\Debug\dag2LakeGame.exe
