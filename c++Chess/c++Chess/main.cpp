@@ -56,8 +56,8 @@ void CreateGrid()
 	grid[7][2] = "*B";
 	grid[7][5] = "*B";
 
-	grid[0][3] = "*Q";
-	grid[0][4] = "*M";
+	grid[0][3] = " Q";
+	grid[0][4] = " M";
 
 	grid[7][3] = "*M";
 	grid[7][4] = "*Q";
