@@ -32,14 +32,14 @@ int main()
 
 	Lake lake;
 
-	Duck duck(5, 5);
+	Duck duck(lake, 5, 5);
 
-	//lake.MoveAnimal(0,0, 10, 10, 'A');
 
 	while (true)
 	{
 		lake.PrintLake();
 
+		lake.Update();
 
 		std::this_thread::sleep_for(std::chrono::milliseconds(500));
 	}

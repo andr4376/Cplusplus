@@ -4,13 +4,18 @@
 
 void Animal::Update()
 {
+
 }
 
-Animal::Animal( int x, int y)
+Animal::Animal()
+{
+}
+
+Animal::Animal(int x, int y)
 {
 }
 
 
 Animal::~Animal()
 {
-}
+	}

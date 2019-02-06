@@ -2,13 +2,19 @@
 #include <string>
 #include <iostream>
 #include <Windows.h>
-
+#include "Animal.h"
+#include "Duck.h"
 HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
 
 int waveCount = 0;
 
+
+Animal* animals[10];
+
+
 void Lake::PopulateLake(int amountOfAnimals)
 {
+
 }
 
 Lake::Lake()
@@ -22,6 +28,37 @@ Lake::~Lake()
 }
 
 
+void Lake::Update()
+{
+	for (Animal* animal : animals)
+	{
+		if (animal != nullptr)
+		{
+		animal->Update();
+
+		}
+	}
+
+}
+
+
+void Lake::AddAnimal(Animal &refAnimal)
+{
+	for (int i = 0; i < sizeof(animals) / sizeof(animals[0]); i++)
+	{
+
+		if (!animals[i])
+		{
+			animals[i] = &refAnimal;
+
+			break;
+		}
+
+	}
+
+}
+
+
 
 void Lake::PrintLake()
 {
@@ -30,7 +67,21 @@ void Lake::PrintLake()
 	{
 		for (int y = 0; y <= 48; y++)
 		{
+
+
 			char c = lake[x][y];
+
+
+			for (Animal* animal : animals)
+			{
+				if (animal != nullptr)
+				{
+					if (animal->x == x && animal->y == y)
+					{
+						c = animal->sprite;
+					}
+				}
+			}
 
 			switch (c)
 			{

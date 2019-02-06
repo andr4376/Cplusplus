@@ -13,7 +13,9 @@ class Duck :
 	public FlyingAnimal
 {
 public:
-	Duck( int x, int y);
+
+	void Update();
+	Duck( Lake &lake,int x, int y);
 	~Duck();
 };
 

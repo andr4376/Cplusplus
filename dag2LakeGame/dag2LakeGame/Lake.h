@@ -7,7 +7,7 @@
 class Lake
 {
 public:
-	
+
 	std::string lake[14] =
 	{
 			"*************************************************",
@@ -26,13 +26,14 @@ public:
 			"*************************************************" };
 	;
 
-	
 
-void PopulateLake(int amountOfAnimals);
-void PrintLake();
- char MoveAnimal(int x, int y, int dx, int dy, char previousChar);
-Lake();
-~Lake();
+	void AddAnimal(Animal &refAnimal);
+	void Update();
+	void PopulateLake(int amountOfAnimals);
+	void PrintLake();
+	char MoveAnimal(int x, int y, int dx, int dy, char previousChar);
+	Lake();
+	~Lake();
 
 };
 
