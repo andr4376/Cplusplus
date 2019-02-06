@@ -2,8 +2,11 @@
   Duck.cpp
   FlyingAnimal.cpp
   Lake.cpp
-  main.cpp
+c:\users\andr4\desktop\coding\c++\cplusplus\dag2lakegame\dag2lakegame\animal.h(7): error C3646: 'lake': unknown override specifier
+c:\users\andr4\desktop\coding\c++\cplusplus\dag2lakegame\dag2lakegame\animal.h(7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
   SwimmingAnimal.cpp
   WalkingAnimal.cpp
+  main.cpp
+c:\users\andr4\desktop\coding\c++\cplusplus\dag2lakegame\dag2lakegame\animal.h(7): error C3646: 'lake': unknown override specifier
+c:\users\andr4\desktop\coding\c++\cplusplus\dag2lakegame\dag2lakegame\animal.h(7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
   Generating Code...
-  dag2LakeGame.vcxproj -> C:\Users\Andr4\source\repos\dag2LakeGame\Debug\dag2LakeGame.exe

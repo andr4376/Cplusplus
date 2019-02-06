@@ -6,6 +6,7 @@
 #include <chrono>
 #include "Duck.h"
 
+using namespace std;
 void SetupSreen()
 {
 	CONSOLE_FONT_INFOEX cfi;
@@ -18,25 +19,29 @@ void SetupSreen()
 	SetCurrentConsoleFontEx(GetStdHandle(STD_OUTPUT_HANDLE), FALSE, &cfi);
 
 	HWND hwnd = GetConsoleWindow();
-	if (hwnd != NULL) { MoveWindow(hwnd, 340, 550, 1200, 650, TRUE); }
+	if (hwnd != NULL) { MoveWindow(hwnd, 0, 0, 1200, 650, TRUE); }
 }
+
+
 
 int main()
 {
+
+
 	SetupSreen();
 
 	Lake lake;
 
 	Duck duck(5, 5);
 
-	lake.MoveAnimal(0,0, 10, 10, 'A');
+	//lake.MoveAnimal(0,0, 10, 10, 'A');
+
 	while (true)
 	{
 		lake.PrintLake();
 
-		lake.MoveAnimal(rand()%14, rand() % 50, rand() % 14, rand() % 50, ' ');
 
-		std::this_thread::sleep_for(std::chrono::milliseconds(250));
+		std::this_thread::sleep_for(std::chrono::milliseconds(500));
 	}
 
 	return 0;

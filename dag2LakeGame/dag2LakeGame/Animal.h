@@ -4,6 +4,7 @@ class Animal
 {
 public:
 
+
 	char sprite;
 
 	int x, y;

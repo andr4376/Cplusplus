@@ -13,7 +13,6 @@ class Duck :
 	public FlyingAnimal
 {
 public:
-
 	Duck( int x, int y);
 	~Duck();
 };
